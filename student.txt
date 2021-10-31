@@ -1,0 +1,4 @@
+Student name: Robin Lemmers
+Student number: 676949
+Student class: inf1A
+URL student GitHub repository: https://github.com/SuperTNT17/WebMarkup-tentamen
