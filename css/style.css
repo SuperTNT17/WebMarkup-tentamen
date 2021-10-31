@@ -2,35 +2,21 @@
 {
 	display: flex;
 	flex-direction: column;
-	width 100px;
+	width: 1000px;
 }
 
-#grid-container
+.flexcontainer1 > h1 , h2
 {
-	
-}
-
-
-#logo
-{
-	width: 100px;
-}
-
-#title
-{
+	color: red;
+	margin: 0px;
 	background-color: gray;
 }
 
-#payoff
+img
 {
-	background-color: lightgray;
+	width: 500px;
 }
 
-nav, .menu
-{
-	background-color: blue;
-	color: white;
-}
 
 #cookiestatement
 {
