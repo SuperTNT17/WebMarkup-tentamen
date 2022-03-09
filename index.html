@@ -3,30 +3,48 @@
 
 <head>
 	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Besttrips | Home</title>
 	<link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 
 <body>
-	<header class="flexcontainer1">
+
+	<!--De header met logo en titel-->
+	<header>
 		<img src="img/tui-logo.png" alt="TUI-logo">
 		<h1>Besttrips</h1>
 		<h2>Goede prijs voor een reis</h2>
 	</header>
 	
-	<nav class="flexcontainer1">
+	<!--De navigatie-->
+	<nav>
 		<ul>
-			<li><a href="bestdestinations.html" class="menu">Best destinations</a></li>
-			<li><a href="tickets.html" class="menu">Tickets</a></li>
-			<li><a href="contact.html" class="menu">Contact</a></li>
+			<li><a href="bestdestinations.html">Best destinations</a></li>
+			<li><a href="tickets.html">Tickets</a></li>
+			<li><a href="contact.html">Contact</a></li>
 		</ul>
 	</nav>
 	
-	<video autoplay muted loop class="flexcontainer1">
+	<!--Het hamburger menu-->
+	<nav class="hamburger">
+		<input type="checkbox" id="checkbox1"><label for="checkbox1">
+		<ul class="menu options">
+			<li><a href="bestdestinations.html">Best destinations</a></li>
+			<li><a href="tickets.html">Tickets</a></li>
+			<li><a href="contact.html">Contact</a></li> 
+		</ul>
+		<span class="toggle">☰</span>
+		</label>
+	</nav>
+	
+	<!--De video-->
+	<video autoplay muted loop>
 		<source src="video/travel-destination.mp4" type="video/mp4">
 		<source src="video/travel-destination.ogg" type="video/ogg">
 	</video>
 	
+	<!--De articles over bestemmingen-->
 	<section id="spanje">
 		<article>
 			<h2>Spanje</h2>
@@ -82,6 +100,7 @@
 		</footer>
 	</section>
 	
+	<!--De aside met vijf bestemmingen-->
 	<aside>
 		<p>Vijf beste opkomende bestemmingen<p>
 		<ol>
@@ -93,10 +112,11 @@
 		</ol>
 	</aside>
 	
+	<!--De copyright en cookie statement-->
 	<footer>
 		<p>&copy; Robin Lemmers</p>
 	</footer>
-	
+
 	<section id="cookiestatement">
 		<p>Cookie statement</p>
 	</section>

@@ -1,25 +1,132 @@
-.flexcontainer1
-{
-	display: flex;
-	flex-direction: column;
-	width: 1000px;
+@media screen and (min-width: 1280px){
+	.hamburger {
+		display: none;
+	}
 }
 
-.flexcontainer1 > h1 , h2
-{
-	color: red;
-	margin: 0px;
-	background-color: gray;
+@media screen and (min-width: 481px) and (max-width: 1279px){
+	.hamburger {
+		display: none;
+	}
 }
 
-img
-{
-	width: 500px;
+@media screen and (max-width: 480px){
+	/*Hamburger menu*/
+	.hamburger {
+		margin: 50px auto;
+		max-width: 700px;
+		width: 95%;
+	}
+
+	#checkbox1, .toggle {
+		display: none;
+	}
+
+	.menu {
+		padding: 0;
+		margin: 0;
+		max-width: 700px;
+		height: 50px;
+		border-radius: 5px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+		list-style-type: none;
+	}
+
+	.menu li a {
+		text-decoration: none;
+		align-self: center;
+		border-radius: 5px;
+		font-size: 14px;
+		padding: 10px 15px;
+		transition: background .2s linear;
+	}
+
+	.toggle {
+		clear: both;
+		display: block;
+		text-align: center;
+		font-size: 13px;
+		line-height: 40px;
+		cursor: pointer;
+		width: 100%;
+		height: 40px;
+		font-size: 18px;
+		color: #595959;
+		background: #dbdbdb;
+		border-bottom-left-radius: 5px;
+		border-bottom-right-radius: 5px;
+		transition: all .1s linear;
+	}
+  
+	/*kleur van de uitvouw knop als je hovert*/
+	.toggle:hover {
+		background: #cecece;
+	}
+ 
+	#checkbox1:checked + label .options li {
+		opacity: 1;
+		visibility: visible;
+		transition: all .7s linear;
+	}
+
+	#checkbox1:checked + label .options {
+		height: 200px;
+	}
+	
+	.menu {
+		border-radius: 0px;
+		border-top-left-radius: 5px;
+		border-top-right-radius: 5px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		height: 0px;
+		/*Deze is voor het uitvouwen*/
+		/*transition: height .3s linear;*/
+	}
+  
+	.menu li {
+		display: flex;
+		align-self: center;
+		width: 95%;
+		opacity: 50;
+		visibility: hidden;
+	}
+	
+	.menu li a {
+		width: 95%;
+		text-align: center;
+		align-self: center;
+		align-content: center;
+	}
+	
+
+	/*kleur van de achtergrond van de menu items*/
+	.options {
+		background: #625b60;
+	}
+
+	/*kleur van de tekst van menu items*/
+	.options li a {
+		color: #fff;
+	}
+
+	/*kleur van de achtergrond van de menu items als je hovert*/
+	.options li a:hover {
+		background: green;
+	}
+	
+	/*de video niet laten zien*/
+	#video{
+		display: none;
+	}
 }
 
-
-#cookiestatement
-{
+#cookiestatement{
 	position: fixed;
 	bottom: 0;
 	right: 0;
@@ -28,17 +135,3 @@ img
 	background-color: #FA0;
 	opacity: 0.5;
 }
-
-@media (min-width: 481px max-width: 1179px){
-	#logo
-	{
-		background-color: black;
-	}
-}
-
-@media (max-width: 479px){
-	#video
-	{
-		display: none;
-	}
-{

@@ -1,20 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="nl">
 
 <head>
 	<meta charset="utf-8"/>
-	<html lang="nl"/>
 	<title>Besttrips | Tickets</title>
 	<link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 
 <body>
+	<!--De header met logo en titel-->
 	<header>
 		<img src="img/TUI-logo.png" alt="TUI-logo" title="home" id="logo">
 		<h1 id="title">Besttrips</h1>
 		<h2 id="payoff">Goede prijs voor een reis</h2>
 	</header>
 	
+	<!--De navigatie-->
 	<nav>
 		<ul>
 			<li><a href="index.html" class="menu">Home</a></li>
@@ -23,6 +24,20 @@
 		</ul>
 	</nav>
 	
+	<!--Het hamburger menu-->
+	<nav class="hamburger">
+		<input type="checkbox" id="checkbox1" />
+		<label for="checkbox1">
+		<ul class="menu options">
+			<li><a href="bestdestinations.html">Best destinations</a></li>
+			<li><a href="tickets.html">Tickets</a></li>
+			<li><a href="contact.html">Contact</a></li> 
+		</ul>
+		<span class="toggle">☰</span>
+		</label>
+	</nav>
+	
+	<!--De tabel met verschillende bestemmingen en prijzen-->
 	<table>
 		<tr>
 			<th>Bestemming</th>
@@ -175,17 +190,19 @@
 	
 	<p>Source of data &copy; 2021 TUI.nl</p>
 	
+	<!--De drie producten om traffic te pushen naar tui.nl-->
 	<aside>
 		<a href="https://www.tui.nl">
-			<img src="https://media.tuicontent.nl/D1A/D1AAB1128AEEF60D2A12DD1B48AC6556.jpg" type="img/jpg" alt="Gran Canaria">
+			<img src="https://media.tuicontent.nl/D1A/D1AAB1128AEEF60D2A12DD1B48AC6556.jpg" alt="Gran Canaria">
 		</a>
 		<a href="https://www.tui.nl">
-			<img src="https://media.tuicontent.nl/CDC/CDCA1AEB474BE2C4E9B5E4F751B89DDD.jpg" type="img/jpg" alt="curacao">
+			<img src="https://media.tuicontent.nl/CDC/CDCA1AEB474BE2C4E9B5E4F751B89DDD.jpg" alt="curacao">
 		</a>
 		<a href="https://www.tui.nl">
-			<img src="https://media.tuicontent.nl/C9B/C9B6CB7F7239FDF585F69EEC27741319.jpg" type="img/jpg" alt="Ivalo">
+			<img src="https://media.tuicontent.nl/C9B/C9B6CB7F7239FDF585F69EEC27741319.jpg" alt="Ivalo">
 		</a>
 	</aside>
+	
 	
 	<footer>
 		<p>&copy; Robin Lemmers</p>
